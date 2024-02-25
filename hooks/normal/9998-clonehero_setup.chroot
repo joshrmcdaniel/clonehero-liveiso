@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+curl -fsSL https://github.com/clonehero-game/releases/releases/download/V1.0.0.4080/CloneHero-linux.tar.xz -o /tmp/CloneHero-linux.tar.xz
+tar -xf /tmp/CloneHero-linux.tar.xz -C /usr/games/
+chmod +x /usr/games/clonehero-linux/clonehero

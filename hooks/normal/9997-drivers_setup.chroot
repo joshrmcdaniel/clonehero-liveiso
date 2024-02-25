@@ -1,0 +1,7 @@
+#!/bin/sh -e
+curl -fsSL https://github.com/medusalix/xone/archive/refs/tags/v0.3.tar.gz -o /tmp/xone.tar.gz
+cd /tmp && tar -xf xone.tar.gz
+rm xone.tar.gz
+cd xone-0.3
+./install.sh --release
+/usr/local/bin/xone-get-firmware.sh --skip-disclaimer

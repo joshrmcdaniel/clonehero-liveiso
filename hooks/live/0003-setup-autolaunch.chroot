@@ -1,0 +1,18 @@
+#!/bin/sh -e
+
+cat > /home/game/.profile <<EOF
+# if running bash
+if [ -n "\$BASH_VERSION" ]; then
+    # include .bashrc if it exists
+    if [ -f "\$HOME/.bashrc" ]; then
+        . "\$HOME/.bashrc"
+    fi
+fi
+
+# if [ -z "\$DISPLAY" ] && [ \$(tty) == /dev/tty1 ]; then
+#     bash
+#     /usr/games/clonehero-linux/clonehero
+#     sudo shutdown -h now
+# fi
+EOF
+chown game:game /home/game/.profile

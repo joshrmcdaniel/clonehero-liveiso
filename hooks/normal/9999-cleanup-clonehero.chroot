@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+rm -rf /tmp/xone
+rm -rf /tmp/CloneHero-linux.tar.xz

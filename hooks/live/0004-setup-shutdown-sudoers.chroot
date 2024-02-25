@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+echo 'game ALL=(ALL) NOPASSWD: /sbin/shutdown' > /etc/sudoers.d/game_shutdown
+chmod 0440 /etc/sudoers.d/game_shutdown
