@@ -1,5 +1,4 @@
 #!/bin/sh -e
-adduser --disabled-password --gecos "" game
 mkdir -p /etc/systemd/system/getty@tty1.service.d
 cat > /etc/systemd/system/getty@tty1.service.d/autologin.conf <<EOF
 [Service]
